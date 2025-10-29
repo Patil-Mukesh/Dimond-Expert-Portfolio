@@ -1,0 +1,143 @@
+/* 🌐 Container */
+
+*{
+    position: relative;
+    z-index: 5;
+}
+.diamond-dashboard {
+  position: relative;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+              0 0 25px rgba(173, 216, 230, 0.2);
+  color: #eaeaea;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* Title */
+.diamond-dashboard h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  margin-bottom: 0.4rem;
+}
+
+/* Subtitle / Index info */
+.diamond-dashboard p {
+  text-align: center;
+  color: #cfd8dc;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.diamond-dashboard p span {
+  font-weight: 600;
+}
+
+.text-green-600 {
+  color: #74ffb4 !important;
+}
+
+.text-red-600 {
+  color: #ff7a7a !important;
+}
+
+/* Table styling */
+.diamond-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  color: #eaeaea;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.diamond-dashboard th,
+.diamond-dashboard td {
+  padding: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.diamond-dashboard th {
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+  color: #fff;
+}
+
+.diamond-dashboard tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+/* Align right for numbers */
+.diamond-dashboard td.text-right {
+  text-align: right;
+}
+
+/* Footer / Timestamp */
+.diamond-dashboard small,
+.diamond-dashboard .timestamp {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #b0bec5;
+  margin-top: 1.5rem;
+  opacity: 0.8;
+}
+
+/* ✨ Loading / Error states */
+.text-center {
+  text-align: center;
+}
+
+.text-red-500 {
+  color: #ff7a7a;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+/* 💫 Responsive Layout */
+@media (max-width: 768px) {
+  .diamond-dashboard {
+    padding: 1.2rem;
+    margin: 1rem;
+    border-radius: 14px;
+  }
+
+  .diamond-dashboard table {
+    font-size: 0.85rem;
+  }
+
+  .diamond-dashboard th,
+  .diamond-dashboard td {
+    padding: 0.6rem;
+  }
+
+  .diamond-dashboard h1 {
+    font-size: 1.5rem;
+  }
+
+  .diamond-dashboard p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 💎 Optional hover glow */
+.diamond-dashboard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1),
+              0 0 30px rgba(173, 216, 230, 0.25);
+}

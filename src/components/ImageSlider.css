@@ -1,0 +1,38 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  aspect-ratio: 17/13;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 12px;
+}
+
+.slider-container img.active {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+
+.slider-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, rgba(0,0,0,0.2), transparent);
+  pointer-events: none;
+}

@@ -1,0 +1,291 @@
+/* 🌙 GLOBAL THEME */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000; /* full black */
+  color: #eaeaea;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+* {
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+  color: #fff !important;
+  text-shadow: 0 2px 6px rgba(255, 255, 255, 0.25);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+.hero p {
+  opacity: 0.8;
+}
+
+/* ========== THEME TOGGLE ========== */
+.theme-toggle {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.15);
+}
+
+.sun {
+  color: #ffd93b;
+}
+
+.moon {
+  color: #f8f8f8;
+}
+
+/* ========== CARD STYLES ========== */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+  color: #eaeaea;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 35px rgba(255, 255, 255, 0.2),
+              0 0 25px rgba(173, 216, 230, 0.25);
+}
+
+/* ========== CARD TEXT ========== */
+.card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.8rem;
+}
+
+.skill-card .desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 0.5rem;
+  white-space: pre-line;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Fade effect for mobile collapse */
+.skill-card .desc.collapsed::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+  border-radius: 0 0 12px 12px;
+}
+
+.read-more {
+  margin-top: 0.6rem;
+  background: none;
+  border: none;
+  color: #7fd0ff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more:hover {
+  color: #b4ecff;
+  transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.2rem;
+    margin: 0.8rem;
+    border-radius: 14px;
+  }
+  .card:active {
+    transform: scale(0.97);
+  }
+  .skill-card .desc.collapsed {
+    max-height: 9.6em;
+    overflow: hidden;
+  }
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+/* ========== 💎 DIAMOND DASHBOARD ========== */
+/* ========== 💎 DIAMOND DASHBOARD STYLISH ========== */
+/* 💎 SIMPLE, RESPONSIVE & CENTERED DIAMOND DASHBOARD */
+.diamond-dashboard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  overflow-x: auto;
+}
+
+/* Title */
+.diamond-dashboard h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #eaf9ff;
+}
+
+.diamond-dashboard p {
+  font-size: 1rem;
+  color: #d0d0d0;
+  margin-bottom: 1.5rem;
+}
+
+.text-green-600 {
+  color: #4effa1 !important;
+}
+
+.text-red-600 {
+  color: #ff6b6b !important;
+}
+
+/* Table */
+.diamond-dashboard table {
+  width: 100%;
+  max-width: 850px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.diamond-dashboard th,
+.diamond-dashboard td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 0.95rem;
+}
+
+.diamond-dashboard th {
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.diamond-dashboard tbody tr:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transition: background 0.3s ease;
+}
+
+/* Footer text */
+.diamond-dashboard .timestamp {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* ✅ Responsive for all screens */
+@media (max-width: 900px) {
+  .diamond-dashboard {
+    padding: 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .diamond-dashboard h1 {
+    font-size: 1.6rem;
+  }
+
+  .diamond-dashboard table {
+    font-size: 0.85rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .diamond-dashboard th,
+  .diamond-dashboard td {
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .diamond-dashboard {
+    padding: 1.2rem;
+  }
+
+  .diamond-dashboard h1 {
+    font-size: 1.4rem;
+  }
+
+  .diamond-dashboard p {
+    font-size: 0.9rem;
+  }
+}
+

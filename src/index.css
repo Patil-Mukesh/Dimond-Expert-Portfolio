@@ -1,0 +1,59 @@
+/* Optional: custom styles */
+body {
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0b1220;
+}
+
+.dark {
+  background-color: #071026;
+  color: #e6eef8;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 16px;
+}
+
+.header, .footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section, .aside {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.dark .section, .dark .aside {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media(min-width: 768px){
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

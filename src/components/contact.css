@@ -1,0 +1,178 @@
+*{
+    text-decoration: none;
+}
+.contact-section {
+  /* background-color: #0a0a0a; */
+  background: transparent;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #e6a500; */
+  padding-bottom: 0;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 50px;
+}
+
+/* Contact cards */
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  text-align: center;
+}
+
+.contact-icon {
+  background-color: #1a1a1a;
+  color: #ffb400;
+  font-size: 1.8rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.contact-icon:hover{
+     width: 80px;
+    height: 80px;
+}
+.contact-card h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+.contact-card h4:hover{
+    font-size: 0.90rem;
+    font-weight: 600;
+}
+.contact-card p, .contact-card a {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: #ffb400;
+}
+
+/* Contact action button */
+.contact-action {
+  margin-bottom: 40px;
+}
+
+.contact-action p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-button {
+  padding: 10px 25px;
+  background-color: #ffb400;
+  color: #0a0a0a;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #e6a500;
+}
+
+/* Social icons */
+.contact-social p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 800;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  background-color: #1a1a1a;
+  color: #ffb400;
+  padding: 18px 12px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  background-color: #ffb400;
+  color: #0a0a0a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .contact-button {
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+.h-p2 strong{
+  font-weight: 10px;
+  color: white;
+  margin-right: 10px;
+}
