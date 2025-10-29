@@ -11,7 +11,7 @@ export default function D_ro() {
     >
       {/* 🔹 Background Diamond Video */}
       <video
-        src={`${import.meta.env.BASE_URL}8971886-uhd_3840_2160_25fps.mp4`}
+        src={`${import.meta.env.BASE_URL}/8971886-uhd_3840_2160_25fps.mp4`}
         autoPlay
         loop
         muted
